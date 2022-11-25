@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">MaxWheel</span>
+    </div>
+      <ul class="nav-links">
+      
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown">
+         <i class='bx bx-list-ul'></i>
+         <button class="dropbtn">User Managment</button>
+         <div class="dropdown-content">
+           <a href="#">Add User</a>
+           <a href="#">Delete User</a>
+           <a href="#">Update info</a>
+        </div>
+      </div>
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown">
+         <i class='bx bx-list-ul'></i>
+         <button class="dropbtn">product Managment</button>
+         <div class="dropdown-content">
+           <a href="#">Add Car</a>
+           <a href="#">Delete Car</a>
+           <a href="#">Update Car</a>
+        </div>
+      </div>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown">
+         <i class='bx bx-list-ul'></i>
+         <button class="dropbtn">order Managment</button>
+         <div class="dropdown-content">
+           <a href="#">Add Order</a>
+           <a href="#">Delete order</a>
+           <a href="#">Update order</a>
+        </div>
+      </div>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="dropdown">
+         <i class='bx bx-list-ul'></i>
+         <button class="dropbtn">Service Managment</button>
+         <div class="dropdown-content">
+           <a href="#">Add Service</a>
+           <a href="#">Delete Service</a>
+           <a href="#">Update Service</a>
+        </div>
+      </div>
+
+
+
+ 
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Welcome</span>
+      </div>
+      
+      <div>
+        
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Order</div>
+            <div class="number">40,876</div>
+            <div class="indicator">
+            </div>
+          </div>
+          <i class='bx bx-cart-alt cart'></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Sales</div>
+            <div class="number">38,876</div>
+            <div class="indicator">
+            </div>
+          </div>
+          <i class='bx bx-cart-alt cart'></i>
+
+        </div>
+        <div>
+          
+        </div>
+        <div >
+          <div class="right-side">
+            
+            <div class="indicator">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Recent Sales</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
+              <li><a href="#">../../..</a></li>
+              
+            </ul>
+            <ul class="details">
+            <li class="topic">Customer</li>
+            <li><a href="#">.... ....</a></li>
+            <li><a href="#">.... ....</a></li>
+            
+          </ul>
+          <ul class="details">
+            <li class="topic">Sales</li>
+            <li><a href="#">Delivered</a></li>
+            <li><a href="#">Pending</a></li>
+            <li><a href="#">Returned</a></li>
+            
+          </ul>
+          <ul class="details">
+            <li class="topic">Total</li>
+            <li><a href="#">00.00/-</a></li>
+            <li><a href="#">00.00/-</a></li>
+            <li><a href="#">00.00/-</a></li>
+           
+          </ul>
+          </div>
+          <div class="button">
+            <a href="#">See All</a>
+          </div>
+        </div>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
